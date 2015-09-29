@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.TestApplication", "CenterCLR.ExaSerializers.TestApplication\CenterCLR.ExaSerializers.TestApplication.csproj", "{FA215752-4215-4697-B531-40DB8B4DABB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET45", "CenterCLR.ExaSerializers.NET45\CenterCLR.ExaSerializers.NET45.csproj", "{177B2881-35EA-4028-923C-76DC4C8626F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.PCL2", "CenterCLR.ExaSerializers.PCL2\CenterCLR.ExaSerializers.PCL2.csproj", "{B4A461C3-42F4-49A4-9A0F-83F200FE3176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NETFX", "CenterCLR.ExaSerializers.NETFX\CenterCLR.ExaSerializers.NETFX.csproj", "{6C79C797-9248-4425-8389-A6F941FCDB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET45.Tests", "CenterCLR.ExaSerializers.NET45.Tests\CenterCLR.ExaSerializers.NET45.Tests.csproj", "{14DDF88E-FA59-43D1-8804-DB8144F9C687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.PCL2.Tests", "CenterCLR.ExaSerializers.PCL2.Tests\CenterCLR.ExaSerializers.PCL2.Tests.csproj", "{05BF010D-38AF-4B72-8E48-E09EFAAAEEB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NETFX.Tests", "CenterCLR.ExaSerializers.NETFX.Tests\CenterCLR.ExaSerializers.NETFX.Tests.csproj", "{EB92377E-928C-4AEA-AC26-0EE6A6799D09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{869AD8E5-5159-46E7-90E0-54C6EA8EECB8}"
+	ProjectSection(SolutionItems) = preProject
+		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET35", "CenterCLR.ExaSerializers.NET35\CenterCLR.ExaSerializers.NET35.csproj", "{2F5A1440-476F-455A-AAAE-DE7A115BF52E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET35.Tests", "CenterCLR.ExaSerializers.NET35.Tests\CenterCLR.ExaSerializers.NET35.Tests.csproj", "{5A411DAA-1D92-48E4-803A-93A5D49A54C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET4", "CenterCLR.ExaSerializers.NET4\CenterCLR.ExaSerializers.NET4.csproj", "{8155A873-A531-4DB4-8253-BCA5B7A3D1B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET4.Tests", "CenterCLR.ExaSerializers.NET4.Tests\CenterCLR.ExaSerializers.NET4.Tests.csproj", "{AFC60FA0-62C1-4275-BFBC-2952347CB42B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA215752-4215-4697-B531-40DB8B4DABB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA215752-4215-4697-B531-40DB8B4DABB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA215752-4215-4697-B531-40DB8B4DABB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA215752-4215-4697-B531-40DB8B4DABB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177B2881-35EA-4028-923C-76DC4C8626F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177B2881-35EA-4028-923C-76DC4C8626F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177B2881-35EA-4028-923C-76DC4C8626F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177B2881-35EA-4028-923C-76DC4C8626F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A461C3-42F4-49A4-9A0F-83F200FE3176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A461C3-42F4-49A4-9A0F-83F200FE3176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A461C3-42F4-49A4-9A0F-83F200FE3176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A461C3-42F4-49A4-9A0F-83F200FE3176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C79C797-9248-4425-8389-A6F941FCDB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C79C797-9248-4425-8389-A6F941FCDB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C79C797-9248-4425-8389-A6F941FCDB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C79C797-9248-4425-8389-A6F941FCDB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14DDF88E-FA59-43D1-8804-DB8144F9C687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DDF88E-FA59-43D1-8804-DB8144F9C687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DDF88E-FA59-43D1-8804-DB8144F9C687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DDF88E-FA59-43D1-8804-DB8144F9C687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BF010D-38AF-4B72-8E48-E09EFAAAEEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BF010D-38AF-4B72-8E48-E09EFAAAEEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BF010D-38AF-4B72-8E48-E09EFAAAEEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BF010D-38AF-4B72-8E48-E09EFAAAEEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB92377E-928C-4AEA-AC26-0EE6A6799D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB92377E-928C-4AEA-AC26-0EE6A6799D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB92377E-928C-4AEA-AC26-0EE6A6799D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB92377E-928C-4AEA-AC26-0EE6A6799D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5A1440-476F-455A-AAAE-DE7A115BF52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5A1440-476F-455A-AAAE-DE7A115BF52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5A1440-476F-455A-AAAE-DE7A115BF52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5A1440-476F-455A-AAAE-DE7A115BF52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A411DAA-1D92-48E4-803A-93A5D49A54C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A411DAA-1D92-48E4-803A-93A5D49A54C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A411DAA-1D92-48E4-803A-93A5D49A54C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A411DAA-1D92-48E4-803A-93A5D49A54C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8155A873-A531-4DB4-8253-BCA5B7A3D1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8155A873-A531-4DB4-8253-BCA5B7A3D1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8155A873-A531-4DB4-8253-BCA5B7A3D1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8155A873-A531-4DB4-8253-BCA5B7A3D1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

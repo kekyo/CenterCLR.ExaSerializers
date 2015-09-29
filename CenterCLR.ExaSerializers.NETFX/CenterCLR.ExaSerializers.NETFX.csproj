@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C79C797-9248-4425-8389-A6F941FCDB12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CenterCLR.ExaSerializers</RootNamespace>
+    <AssemblyName>CenterCLR.ExaSerializers</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile32</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;NETFX_CORE;USE_UNSAFE;USE_INLINING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;NETFX_CORE;USE_UNSAFE;USE_INLINING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <TargetPlatform Include="Windows, Version=8.1" />
+    <TargetPlatform Include="WindowsPhoneApp, Version=8.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\ExaBinaryReader.cs">
+      <Link>ExaBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\ExaBinaryWriter.cs">
+      <Link>ExaBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\ExaSerializerExtensions.cs">
+      <Link>ExaSerializerExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\ExaStreamReader.cs">
+      <Link>ExaStreamReader.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\ExaStreamWriter.cs">
+      <Link>ExaStreamWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\ExpressionCompatibilityLayer.cs">
+      <Link>Generators\ExpressionCompatibilityLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\ExpressionCompatibilityLayer_Extended.cs">
+      <Link>Generators\ExpressionCompatibilityLayer_Extended.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\ExpressionCompatibilityLayer_Strict.cs">
+      <Link>Generators\ExpressionCompatibilityLayer_Strict.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\ReflectionCompatibilityLayer.cs">
+      <Link>Generators\ReflectionCompatibilityLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\ReflectionUtilities.cs">
+      <Link>Generators\ReflectionUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\ReaderAgentGenerator.cs">
+      <Link>Generators\ReaderAgentGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Generators\WriterAgentGenerator.cs">
+      <Link>Generators\WriterAgentGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Readers\InternalBinaryReader.cs">
+      <Link>Readers\InternalBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Readers\InternalStreamReader.cs">
+      <Link>Readers\InternalStreamReader.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Readers\InternalReaderBase.cs">
+      <Link>Readers\InternalReaderBase.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Readers\InternalReaderBase_Managed.cs">
+      <Link>Readers\InternalReaderBase_Managed.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Readers\InternalReaderBase_Unsafe.cs">
+      <Link>Readers\InternalReaderBase_Unsafe.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Writers\InternalBinaryWriter.cs">
+      <Link>Writers\InternalBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Writers\InternalStreamWriter.cs">
+      <Link>Writers\InternalStreamWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Writers\InternalWriterBase.cs">
+      <Link>Writers\InternalWriterBase.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Writers\InternalWriterBase_Managed.cs">
+      <Link>Writers\InternalWriterBase.cs</Link>
+    </Compile>
+    <Compile Include="..\CenterCLR.ExaSerializers.NET45\Writers\InternalWriterBase_Unsafe.cs">
+      <Link>Writers\InternalWriterBase.cs</Link>
+    </Compile>
+    <Compile Include="ExaDataReader.cs" />
+    <Compile Include="ExaDataWriter.cs" />
+    <Compile Include="ExaNetFxSerializerExtensions.cs" />
+    <Compile Include="Readers\InternalDataReader.cs" />
+    <Compile Include="Writers\InternalDataWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

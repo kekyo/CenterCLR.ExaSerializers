@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{177B2881-35EA-4028-923C-76DC4C8626F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CenterCLR.ExaSerializers</RootNamespace>
+    <AssemblyName>CenterCLR.ExaSerializers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;NET45;USE_UNSAFE;USE_INLINING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;NET45;USE_UNSAFE;USE_INLINING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ExaBinaryReader.cs" />
+    <Compile Include="ExaBinaryWriter.cs" />
+    <Compile Include="ExaSerializerExtensions.cs" />
+    <Compile Include="ExaStreamReader.cs" />
+    <Compile Include="ExaStreamWriter.cs" />
+    <Compile Include="Generators\ExpressionCompatibilityLayer_Extended.cs" />
+    <Compile Include="Generators\ExpressionCompatibilityLayer_Strict.cs" />
+    <Compile Include="Readers\InternalBinaryReader.cs" />
+    <Compile Include="Readers\InternalReaderBase_Unsafe.cs" />
+    <Compile Include="Readers\InternalReaderBase_Managed.cs" />
+    <Compile Include="Writers\InternalBinaryWriter.cs" />
+    <Compile Include="Readers\InternalReaderBase.cs" />
+    <Compile Include="Readers\InternalStreamReader.cs" />
+    <Compile Include="Writers\InternalStreamWriter.cs" />
+    <Compile Include="Writers\InternalWriterBase_Unsafe.cs" />
+    <Compile Include="Writers\InternalWriterBase_Managed.cs" />
+    <Compile Include="Writers\InternalWriterBase.cs" />
+    <Compile Include="Generators\ReaderAgentGenerator.cs" />
+    <Compile Include="Generators\ReflectionCompatibilityLayer.cs" />
+    <Compile Include="Generators\ReflectionUtilities.cs" />
+    <Compile Include="Generators\WriterAgentGenerator.cs" />
+    <Compile Include="Generators\ExpressionCompatibilityLayer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
