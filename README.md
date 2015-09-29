@@ -14,11 +14,14 @@
 ## Current status
 * Still under construction (Performance improving now...)
 * Support primitives / string / char / enum / class / struct types.
+* Support collections (List<T>, IEnumerable<T>, IList<T>, ICollection<T>, IReadOnlyCollection<T>)
+* Support streaming deserialization under root collection type.
 * Support basic .NET serialization scheme by public / private fields and DataContract'ed properties.
 * Support Serializable / NotSerialized / DataContract / DataMember attributes.
 * Support string encoder, and special tuned for 1-byte fixed format encoder.
 * Support .NET 3.5 / 4.0 / 4.5 / PCL1 / PCL2 / NETFX by Expression-Tree based serializer / deserializer.
 * Support .NET 3.5 / 4.0 / 4.5 / NETFX by unsafe pointer-based manipulator.
+* Not supported derived / interface type runtime instances.
 * Not supported recursive type referenced type (and recursive instance).
 * Not supported ISerializable interface.
 * Not supported type surrogators.
