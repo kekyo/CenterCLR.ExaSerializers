@@ -12,8 +12,8 @@
 * Under Apache v2
 
 ## Current status
-* Still under construction.
-* Support primitives / string / char / class / struct types.
+* Still under construction (Performance improving now...)
+* Support primitives / string / char / enum / class / struct types.
 * Support basic .NET serialization scheme by public / private fields and DataContract'ed properties.
 * Support Serializable / NotSerialized / DataContract / DataMember attributes.
 * Support string encoder, and special tuned for 1-byte fixed format encoder.
