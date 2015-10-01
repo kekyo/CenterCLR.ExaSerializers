@@ -32,7 +32,9 @@
 * More improvement copy-bits code using unmanaged code. (.NET 3.5 / 4.0 / 4.5 / NETFX)
 * Support recursive type referenced type.
 * Support fixed format string by UTF16 encoder.
+* Optimize buffering strategy.
 * NuGet packaging.
+* Documents.
 
 ## Usage
 * Easy usage sample:
@@ -86,7 +88,7 @@ public void Test()
     ms.Position = 0;
   
     // Deserialize
-    var model = ms.ReadValue<StandardClassFieldModel>();
+    var dmodel = ms.ReadValue<StandardClassFieldModel>();
   }
 }
 ```

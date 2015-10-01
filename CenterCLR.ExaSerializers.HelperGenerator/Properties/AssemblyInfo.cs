@@ -19,4 +19,4 @@
 
 using System.Reflection;
 
-[assembly: AssemblyTitle("CenterCLR.ExaSerializers [PCL1]")]
+[assembly: AssemblyTitle("CenterCLR.ExaSerializers.HelperGenerator")]

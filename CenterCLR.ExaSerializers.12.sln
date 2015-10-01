@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{869AD8E5-5159-46E7-90E0-54C6EA8EECB8}"
 	ProjectSection(SolutionItems) = preProject
 		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET35", "CenterCLR.ExaSerializers.NET35\CenterCLR.ExaSerializers.NET35.csproj", "{2F5A1440-476F-455A-AAAE-DE7A115BF52E}"
@@ -29,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET4", "CenterCLR.ExaSerializers.NET4\CenterCLR.ExaSerializers.NET4.csproj", "{8155A873-A531-4DB4-8253-BCA5B7A3D1B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.NET4.Tests", "CenterCLR.ExaSerializers.NET4.Tests\CenterCLR.ExaSerializers.NET4.Tests.csproj", "{AFC60FA0-62C1-4275-BFBC-2952347CB42B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.ExaSerializers.HelperGenerator", "CenterCLR.ExaSerializers.HelperGenerator\CenterCLR.ExaSerializers.HelperGenerator.csproj", "{361D70A7-8996-4528-B161-379FFB8D4C2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +83,10 @@ Global
 		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC60FA0-62C1-4275-BFBC-2952347CB42B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361D70A7-8996-4528-B161-379FFB8D4C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361D70A7-8996-4528-B161-379FFB8D4C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361D70A7-8996-4528-B161-379FFB8D4C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361D70A7-8996-4528-B161-379FFB8D4C2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
