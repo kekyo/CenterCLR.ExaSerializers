@@ -185,7 +185,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (byte* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -209,7 +209,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (sbyte* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -233,7 +233,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (short* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -257,7 +257,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (ushort* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -281,7 +281,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (int* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -305,7 +305,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (uint* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -329,7 +329,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (long* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -353,7 +353,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (ulong* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -377,7 +377,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (float* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;
@@ -401,7 +401,7 @@ namespace CenterCLR.ExaSerializers.Readers
 
 			fixed (double* pd = &values[0])
 			{
-				ReflectionUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
+				UnsafeUtilities.UnsafeCopyBits(ps, (byte*)pd, rawLength);
 			}
 
 			nextPosition_ += rawLength;

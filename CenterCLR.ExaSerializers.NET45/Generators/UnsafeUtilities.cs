@@ -17,22 +17,25 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-using System.Reflection;
-using System.Runtime.InteropServices;
+#if USE_UNSAFE
+using System;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
-[assembly: AssemblyDescription("A lightning fast & lightweight simple binary serializer.")]
-
-[assembly: AssemblyCompany("Kouji Matsui")]
-[assembly: AssemblyProduct("CenterCLR.ExaSerializers")]
-[assembly: AssemblyCopyright("Copyright (c) 2015 Kouji Matsui")]
-[assembly: AssemblyTrademark("CenterCLR.ExaSerializers")]
-[assembly: AssemblyCulture("")]
-[assembly: AssemblyConfiguration("")]
-
-#if !PCL1 && !PCL2
-[assembly: Guid("5beef5d4-b3c4-41ff-b917-877909632952")]
-[assembly: ComVisible(false)]
+namespace CenterCLR.ExaSerializers.Generators
+{
+	internal static class UnsafeUtilities
+	{
+		#region UnsafeCopyBits
+#if NETFX_CORE
+		[MethodImpl(MethodImplOptions.AggressiveInlining | (MethodImplOptions)16)]
+#elif USE_INLINING
+		[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.ForwardRef)]
+#else
+		[MethodImpl(MethodImplOptions.ForwardRef)]
 #endif
-
-[assembly: AssemblyVersion("0.6.7.0")]
-[assembly: AssemblyFileVersion("0.6.7.0")]
+		public static extern unsafe void UnsafeCopyBits(byte* pFrom, byte* pTo, int length);
+		#endregion
+	}
+}
+#endif

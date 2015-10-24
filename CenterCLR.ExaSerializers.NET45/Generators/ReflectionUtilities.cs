@@ -220,53 +220,5 @@ namespace CenterCLR.ExaSerializers.Generators
 					});
 		}
 		#endregion
-
-		#region UnsafeCopyBits
-#if USE_UNSAFE
-#if USE_INLINING
-		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-#endif
-		public static unsafe void UnsafeCopyBits(byte* pFrom, byte* pTo, int length)
-		{
-			Debug.Assert(pFrom != (byte*)0);
-			Debug.Assert(pTo != (byte*)0);
-			Debug.Assert(length >= 1);
-
-			var fromBound = (((byte)pFrom) & 0x07) == 0x00;
-			var toBound = (((byte)pTo) & 0x07) == 0x00;
-
-			if (fromBound && toBound)
-			{
-				var ps = (ulong*)pFrom;
-				var pd = (ulong*)pTo;
-				var remains = length;
-				while (remains >= sizeof(ulong))
-				{
-					*(pd++) = *(ps++);
-					remains -= sizeof(ulong);
-				}
-
-				var psl = (byte*)ps;
-				var pdl = (byte*)pd;
-				while (remains >= 1)
-				{
-					*(pdl++) = *(psl++);
-					remains--;
-				}
-			}
-			else
-			{
-				var ps = pFrom;
-				var pd = pTo;
-				var remains = length;
-				while (remains >= 1)
-				{
-					*(pd++) = *(ps++);
-					remains--;
-				}
-			}
-		}
-#endif
-		#endregion
 	}
 }
